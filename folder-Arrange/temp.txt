@@ -1,0 +1,33 @@
+# watchin file changing events
+from watchdog.events import FileSystemEventHandler
+from watchdog.observers import *
+
+
+
+
+
+# class MyHandler(FileSystemEventHandler):
+#     def on_modified(self, event):
+#         for file in files:
+#             srcDir = filePath + "/" + file
+#             newDes = maniPath + '/' + file
+#             os.mkdir(maniPath)
+#             os.rename(srcDir, newDes)
+#
+# maniPath = input('Enter the Valid path to create folder(with folder name): ')
+# filePath = '/Users/kavinselvaraj/Downloads'
+# #checkDirectory = "/Users/kavinselvaraj/Desktop/temp2"
+# event_handler = MyHandler()
+# observer = Observer()
+# observer.schedule(event_handler, path=filePath, recursive=False)
+# print('BS')
+# observer.start()
+# print('As')
+#
+# try:
+#     while True:
+#         time.sleep(10)
+# except KeyboardInterrupt:
+#     observer.stop()
+#     print('stopped')
+# observer.join()
