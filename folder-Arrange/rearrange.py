@@ -25,7 +25,7 @@ def getFileExtension():
     global ext
     # listFile = (file for file in os.listdir(checkDirectory) if os.path.isfile(os.path.join(checkDirectory, file)))
     listFile = os.listdir(checkDirectory)
-    #print(listFile)
+    # print(listFile)
 
     for file in listFile:
         if file.split(".")[:-1] in dirName:
@@ -33,7 +33,8 @@ def getFileExtension():
         else:
             ext = file.split(".")[-1]
             path = os.path.abspath(file)
-            #print(path)
-            #os.rename( )
+            # print(path)
+            # os.rename( )
+
 
 getFileExtension()
